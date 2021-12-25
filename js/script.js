@@ -1,3 +1,2 @@
-const a = 500;
-const myfunction ;
-
+const b = 100;
+const myfunction =>()=>{};
