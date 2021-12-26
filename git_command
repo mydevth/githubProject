@@ -1,3 +1,6 @@
+
+#init git
+#Setting -> search Files.exclude -> remove .git
 git init
 git status
 git add index.html
