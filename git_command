@@ -1,0 +1,109 @@
+#Collaboration
+
+$git init
+$git add .
+$git commit -m "init git"
+
+#Create a new repository in GitHub
+$git remote add origin https://xxxxxx/xxx.git
+$git push origin master
+
+#add collaboration
+Settings->Collaboration
+add user
+confirm  email
+
+#
+copy link repository
+mkdir xxxxxx/xxx
+cd xxxxxx/xxx
+git clone https://xxxxxx/xxx
+
+$ git push origin master
+$ git pull origin master
+
+
+
+
+#Working with Branch 
+
+
+$ git branch --set-upstream-to=origin/master master
+ 
+$ git branch feature-1      # create branch
+$ git branch
+$ git checkout feature-1    #Switched to branch 'feature-1'
+
+$ git checkout -b feature-2  #create and Switched to a new branch 'feature-2'
+
+$ git branch -D feature-1  #Deleted branch feature-1 (was d4c84e0). 
+
+$ git push origin feature-2
+
+$ git pull origin feature-1
+
+
+$ git checkout --track origin/feature-1  #Switched to a new branch 'feature-1'
+										 #Branch 'feature-1' set up to track remote branch 'feature-1' from 'origin'.
+										 
+$ git pull origin feature-1
+
+
+$ git push origin --delete feature-2
+To https://github.com/mydevth/githubProject.git
+ - [deleted]         feature-2
+
+$ git checkout master
+$ git branch -D feature-1     #Deleted branch feature-1 (was e99453a).
+$ git branch -D feature-2     #Deleted branch feature-2 (was 8253e8c).
+$ git branch
+
+#Merge Branches 
+$ git commit -am "add style h1"    #add and commit (can't use new file )
+
+#fast forword merge
+$ git merge dev
+
+
+
+#merge config
+$ git merge dev
+     edit manual
+$ git add .
+$ git commit
+
+
+$ git merge --abort        #cancle merge
+
+#Rebase
+akkad@DESKTOP-Home MINGW64 /e/coding/gitProject/gitProject2 (feature)
+$ git rebase master
+Successfully rebased and updated refs/heads/feature.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
