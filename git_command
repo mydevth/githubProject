@@ -102,9 +102,15 @@ Successfully rebased and updated refs/heads/feature.
 
 #git warning: LF will be replaced by CRLF in node_modules
  $ git config --global core.autocrlf false
+ 
+ 
+ ----------------------- troubleshooting ------------------
+ 
 
-
-
+Git fatal: remote origin already exists Solution
+	$ git remote -v
+	$ git remote rm origin
+	$ git remote add origin https://github.com/career_karma_tutorials/git_tutorials
 
 
 
